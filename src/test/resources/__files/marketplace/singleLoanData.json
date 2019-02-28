@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "url": "https://app.zonky.cz/loan/1",
+    "name": "Loan refinancing",
+    "story": "Dear investors, ...",
+    "purpose": "6",
+    "photos": [
+      {
+        "name": "6",
+        "url": "/loans/31959/photos/1987"
+      }
+    ],
+    "nickName": "zonky0",
+    "termInMonths": 42,
+    "interestRate": 0.0599,
+    "revenueRate": 0.0499,
+    "annuityWithInsurance": 2543,
+    "rating": "AAA",
+    "topped": null,
+    "amount": 200000,
+    "remainingInvestment": 152600,
+    "reservedAmount": 1000,
+    "investmentRate": 0.237,
+    "covered": false,
+    "datePublished": "2016-04-19T18:25:41.208+02:00",
+    "published": true,
+    "deadline": "2016-04-26T18:23:53.101+02:00",
+    "investmentsCount": 72,
+    "questionsCount": 3,
+    "region": "6",
+    "mainIncomeType": "EMPLOYMENT",
+    "insuranceActive": true,
+    "insuranceHistory": [
+      {
+        "policyPeriodFrom": "2016-04-18",
+        "policyPeriodTo": "2016-04-19"
+      }
+    ]
+  }
+]

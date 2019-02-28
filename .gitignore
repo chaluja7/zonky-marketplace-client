@@ -1,0 +1,16 @@
+#mvn
+target
+
+#java
+*.class
+*.jar
+*.war
+
+#idea
+.idea
+*.iml
+
+#eclipse
+.settings
+.classpath
+.project

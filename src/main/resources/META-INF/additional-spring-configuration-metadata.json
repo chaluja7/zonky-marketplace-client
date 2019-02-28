@@ -1,0 +1,28 @@
+{
+  "properties": [
+    {
+      "name": "spring.application.url",
+      "type": "java.lang.String",
+      "description": "This apps url within current env."
+    },
+    {
+      "name": "zonky.api.base-url",
+      "type": "java.lang.String",
+      "description": "Base url of zonky api service."
+    },
+    {
+      "name": "zonky.api.user-agent",
+      "type": "java.lang.String",
+      "description": "Value of user-agent header for zonky api service."
+    },
+    {
+      "name": "zonky.api.batch-page-size",
+      "type": "java.lang.Integer",
+      "description": "Size of one page in terms of batch reading."
+    },
+    {
+      "name": "app.scheduling.enable",
+      "type": "java.lang.Boolean",
+      "description": "Whether scheduled tasks are enabled."
+    }
+  ] }

@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: zonkyMarketplaceTracker
+    url: github.com/chaluja7
+
+feign:
+  client:
+    config:
+      marketplace:
+        connectTimeout: 5000
+        readTimeout: 15000 # for larger batch processing
+        loggerLevel: full
+  hystrix:
+    enabled: false
+    # for real environment enable hystrix, configure fallback or at least simple retryer
+
+zonky:
+  api:
+    base-url: https://api.zonky.cz
+    user-agent: ${spring.application.name}/@version@ (${spring.application.url})
+    batch-page-size: 1000
+
+app:
+  scheduling:
+    enable: true
+
+
