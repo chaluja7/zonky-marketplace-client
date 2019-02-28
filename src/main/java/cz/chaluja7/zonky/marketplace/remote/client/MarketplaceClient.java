@@ -14,14 +14,12 @@ import java.util.List;
 public interface MarketplaceClient {
 
     @GetMapping("/marketplace")
-    ResponseEntity<List<LoanDto>> getLoans(@RequestHeader("X-Page") int page,
-                                           @RequestHeader("X-Size") int pageSize,
-                                           @RequestHeader("X-Order") String order);
+    ResponseEntity<List<LoanDto>> getLoans(
+            @RequestHeader("X-Page") int page, @RequestHeader("X-Size") int pageSize, @RequestHeader("X-Order") String order);
 
     @GetMapping("/marketplace")
-    ResponseEntity<List<LoanDto>> getLoansAfter(@RequestHeader("X-Page") int page,
-                                                @RequestHeader("X-Size") int pageSize,
-                                                @RequestHeader("X-Order") String order,
-                                                @RequestParam("datePublished__gt") OffsetDateTime publishedAfter);
+    ResponseEntity<List<LoanDto>> getLoansAfter(
+            @RequestHeader("X-Page") int page, @RequestHeader("X-Size") int pageSize, @RequestHeader("X-Order") String order,
+            @RequestParam("datePublished__gt") OffsetDateTime publishedAfter);
 
 }

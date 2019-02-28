@@ -23,5 +23,3 @@ zonky:
 app:
   scheduling:
     enable: true
-
-

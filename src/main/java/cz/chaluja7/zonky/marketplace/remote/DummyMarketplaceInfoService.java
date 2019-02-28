@@ -23,10 +23,12 @@ class DummyMarketplaceInfoService implements MarketplaceInfoService {
 
     static final Map<JobKey, ZonedDateTime> LAST_PROCESSED_RECORDS_MAP = new ConcurrentHashMap<>();
 
+    @Override
     public void putLastProcessedRecordTime(@NonNull JobKey key, @NonNull ZonedDateTime zonedDateTime) {
         LAST_PROCESSED_RECORDS_MAP.put(key, zonedDateTime);
     }
 
+    @Override
     public Optional<ZonedDateTime> getLastProcessedRecordTime(@NonNull JobKey key) {
         return Optional.ofNullable(LAST_PROCESSED_RECORDS_MAP.get(key));
     }
